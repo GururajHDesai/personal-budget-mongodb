@@ -3,25 +3,33 @@
 <head>
     <!-- This is an SEO Change -->
     <meta name="description" content="Personalbudget managment app">
-    <meta name="keywords" content="budget, personal, finance, money">
-    <meta name="tags" content="personalfinance, budget, work, dollar, shedule">
     <!-- This is an SEO Change -->
+    <meta name="keywords" content="budget, personal, finance, money">
+    <!-- This is an SEO Change -->
+    <meta name="tags" content="personalfinance, budget, work, dollar, shedule">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="http://137.184.20.197/pb/reset.css">
-    <link rel="stylesheet" href="http://137.184.20.197/pb/main.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/reset.css">
 </head>
 <body>
-
-    <nav class="menu">
+    <!-- This is a Semantic HTML Change -->
+    <!-- This is an A11y Change -->
+    <nav class="menu" role="navigation" aria-label="Main Menu">
         <ul>
-            <li><a href="/">Homepage</a></li>
+            <!-- This is an A11y Change -->
+            <li><a href="/" aria-current="page">Homepage</a></li>
             <li><a href="/about.html">About</a></li>
+            <!-- This is an A11y Change -->
+            <li><a href="#center">Skip to main content</a></li>
             <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
+            <!-- This is an A11y Change -->
+            <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
         </ul>
     </nav>
+    
     <!-- This is a Semantic HTML Change -->
 
     <header class="hero">
@@ -29,7 +37,7 @@
         <h2>A personal-budget management app</h2>
     </header><!-- This is a Semantic HTML Change -->
 
-    <div class="container center">
+    <div class="container center" id="center">
 
         <div class="page-area">
 
@@ -100,11 +108,11 @@
         </div>
 
     </div>
-
+    <!-- This is a Semantic HTML Change -->
     <footer class="bottom">
         <p class="center">
-            All rights reserved &copy; Fabio Nolasco
-        </p><!-- This is a Semantic HTML Change -->
+            All rights reserved &copy; Gururaj H Desai
+        </p>
     </footer>
 
 </body>
