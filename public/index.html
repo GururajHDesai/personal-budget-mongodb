@@ -7,11 +7,12 @@
     <title>Personal Budget</title>
 
     <!-- This is a Semantic HTML Change: Changed the link relationship to indicate it's a stylesheet -->
-    <link rel="stylesheet" href="http://192.241.141.105/pb/reset.css">
-    <link rel="stylesheet" href="http://192.241.141.105/pb/main.css">
+    <!-- myip-->
+    <link rel="stylesheet" href="http://137.184.20.197/pb/reset.css">
+    <link rel="stylesheet" href="http://137.184.20.197/pb/main.css">
 
     <style>
-
+        
         div.new {
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
           width: 960px;
@@ -39,11 +40,11 @@
         </style>
 
     <!-- This is an SEO Change -->
-    <meta name="description" content="Simplify budget management with our free app. Track expenses, stay on budget, and achieve financial success effortlessly.">
+    <meta name="description" content="Budget Simplification and tracking">
     <!-- This is an SEO Change -->
-    <meta name="keywords" content="spending, financial strategy, financial control, personal finance, budget tracking, ">
+    <meta name="keywords" content="finance,plan, financial,budget, market,literate ,statergy">
     <!-- This is an SEO Change -->
-    <meta name="author" content="Gururaj Hanamesh Desai">    
+    <meta name="author" content="GURURAJ HANAMESH DESAI">    
 </head>
 <body>
 
@@ -53,14 +54,14 @@
             <!-- This is an A11y Change -->
             <li><a href="/" aria-label="Go to Homepage">Homepage</a></li>
             <!-- This is an A11y Change -->
-            <li><a href="http://192.241.141.105/pb/about.html" aria-label="Learn About Our App">About</a></li>
+            <li><a href="http://137.184.20.197/pb/about.html" aria-label="Learn About Our App">About</a></li>
             <!-- This is an A11y Change -->
-            <li><a href="http://192.241.141.105/pb/login.html" aria-label="Log into Your Account">Login</a></li>
+            <li><a href="http://137.184.20.197/pb/login.html" aria-label="Log into Your Account">Login</a></li>
             <!-- This is an A11y Change -->
             <li><a href="https://google.com" aria-label="Visit Google">Google</a></li>
         </ul>
     </nav>
-    
+    <!-------------------------------------ref------------------------------------------------>
 
     <!-- This is a Semantic HTML Change -->
     <header class="hero">
@@ -75,7 +76,7 @@
             <div class="text-box">
                 <h1>Stay on track</h1>
                 <p>
-                    Do you know where you are spending your money? If you really stop to track it down,
+                    Do  you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
@@ -144,11 +145,14 @@
         <!-- This is a Semantic HTML Change -->
         <footer class="bottom">
             <p class="center">
-                All rights reserved &copy; Gururaj Hanamesh Desai
+                All rights reserved &copy; GURURAJ HANAMESH DESAI
             </p>
         </footer>
     </div>
+<!-- This is a Semantic HTML Change -->
+<!-- reference for next-->
 
+<!-- Below are color code and nect is pie chart followed by changes-->
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js" integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
@@ -228,13 +232,9 @@ svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 var key = function(d){ return d.data.label; };
 
  var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    color.domain(["Eat out", "Rent", "Grocery", "Utilities", "Transportation", "Entertainment", "Savings"])
+ 	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
- 	//.domain(["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sd", "do", "eiusmod", "tempor", "incididunt"])
- 	d3.json("/budget", function(error, data){
-        if (error) throw error;
-        change(data);
-    });
 
 function randomData (){
 	var labels = color.domain();
@@ -254,6 +254,8 @@ d3.select(".randomize")
 function change(data) {
 
 	/* ------- PIE SLICES -------*/
+    /* ------- this is pie slice and transition effect for the chat like animition-------*/
+    /* ------- duration for the time is mentioned -------*/
 	var slice = svg.select(".slices").selectAll("path.slice")
 		.data(pie(data), key);
 
@@ -277,6 +279,7 @@ function change(data) {
 		.remove();
 
 	/* ------- TEXT LABELS -------*/
+    /* ------- these are lables and data calculation -------*/
 
 	var text = svg.select(".labels").selectAll("text")
 		.data(pie(data), key);
@@ -318,6 +321,7 @@ function change(data) {
 		.remove();
 
 	/* ------- SLICE TO TEXT POLYLINES -------*/
+    /* ------- these are lines and interption -------*/
 
 	var polyline = svg.select(".lines").selectAll("polyline")
 		.data(pie(data), key);
