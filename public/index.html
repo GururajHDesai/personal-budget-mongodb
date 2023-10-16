@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description"
+        content="Managing financial budget effectively can be tough and this free budget management app helps you track your expenses and stay on budget.">
+   
+    <meta name="keywords" content="expenses, financial planning, money management,personal budget, budget management, ">
+
+    <meta name="author" content="GururajHanameshDesai">
+
+
 
     <title>Personal Budget</title>
-
-    <!-- This is a Semantic HTML Change: Changed the link relationship to indicate it's a stylesheet -->
-    <!-- myip-->
-    <link rel="stylesheet" href="http://137.184.20.197/pb/reset.css">
-    <link rel="stylesheet" href="http://137.184.20.197/pb/main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
 
     <style>
-        
         div.new {
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-          width: 960px;
-          height: 500px;
-          position: relative;
-          align-items:center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            width: 960px;
+            height: 500px;
+            position: relative;
+            align-items: center;
         }
-        
+
         svg {
             width: 100%;
             height: 100%;
         }
-        
-        path.slice{
-            stroke-width:2px;
+
+        path.slice {
+            stroke-width: 2px;
         }
-        
-        polyline{
+
+        polyline {
             opacity: .3;
             stroke: black;
             stroke-width: 2px;
             fill: none;
         }
-        
-        </style>
+    </style>
 
-    <!-- This is an SEO Change -->
-    <meta name="description" content="Budget Simplification and tracking">
-    <!-- This is an SEO Change -->
-    <meta name="keywords" content="finance,plan, financial,budget, market,literate ,statergy">
-    <!-- This is an SEO Change -->
-    <meta name="author" content="GURURAJ HANAMESH DESAI">    
+
+
+
 </head>
+
 <body>
 
-    <!-- This is a Semantic HTML Change -->   
     <nav class="menu" role="navigation">
         <ul>
-            <!-- This is an A11y Change -->
-            <li><a href="/" aria-label="Go to Homepage">Homepage</a></li>
-            <!-- This is an A11y Change -->
-            <li><a href="http://137.184.20.197/pb/about.html" aria-label="Learn About Our App">About</a></li>
-            <!-- This is an A11y Change -->
-            <li><a href="http://137.184.20.197/pb/login.html" aria-label="Log into Your Account">Login</a></li>
-            <!-- This is an A11y Change -->
-            <li><a href="https://google.com" aria-label="Visit Google">Google</a></li>
+            
+            <li><a href="#main">Skip To Main Content</a></li>
+           
+            <li><a href="/" aria-label="Homepage">Homepage</a></li>
+            
+            <li><a href="/about.html" aria-label="About this page">About</a></li>
+            
+            <li><a href="/login.html" aria-label="Login page">Login</a></li>
+         
+            <li><a href="https://google.com" aria-label="Google search engine">Google</a></li>
         </ul>
     </nav>
-    <!-------------------------------------ref------------------------------------------------>
-
-    <!-- This is a Semantic HTML Change -->
-    <header class="hero">
+   
+    <div class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </header>
+    </div>
 
-    <div class="container center">
+    <!-- This is  A11y -->
+    <div class="container center" id="main">
 
         <div class="page-area">
 
             <div class="text-box">
                 <h1>Stay on track</h1>
                 <p>
-                    Do  you know where you are spending your money? If you really stop to track it down,
+                    Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
             </div>
-    
+
             <div class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </div>
-    
+
             <div class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    Also, they to live happier lives... since they expend without guilt or fear...
                     because they know it is all good and accounted for.
                 </p>
             </div>
-    
+
             <div class="text-box">
                 <h1>Free</h1>
                 <p>
@@ -113,23 +116,23 @@
                     app will help you with that!
                 </p>
             </div>
-    
+
             <div class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </div>
-    
+
             <div class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    Also, they to live happier lives... since they expend without guilt or fear...
                     because they know it is all good and accounted for.
                 </p>
             </div>
-    
+
             <div class="text-box">
                 <h1>Chart</h1>
                 <p>
@@ -137,24 +140,22 @@
                 </p>
             </div>
             <div class="new" id="this">
-                <h1>D3JS chart</h1>    
-                <button class="randomize">randomize</button>
+                <h1>D3JS chart</h1>
             </div>
 
         </div>
-        <!-- This is a Semantic HTML Change -->
-        <footer class="bottom">
-            <p class="center">
-                All rights reserved &copy; GURURAJ HANAMESH DESAI
-            </p>
-        </footer>
-    </div>
-<!-- This is a Semantic HTML Change -->
-<!-- reference for next-->
 
-<!-- Below are color code and nect is pie chart followed by changes-->
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js" integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+
+    
+    <footer class="bottom">
+
+        <p class="center">All rights reserved &copy; GururajHanameshDesai</p>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+        integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script>
@@ -162,193 +163,195 @@
             datasets: [
                 {
                     data: [],
-                    backgroundColor: [
-                        '#ffcd56',
-                        '#ff6384',
-                        '#36a2eb',
-                        '#fd6b19',
-                        '#fd6b90',
-                        '#36aeb8',
-                        '#36ae78',
-                        '#36ae18',
-                    ],
+                    backgroundColor: [],
                 }
             ],
             labels: []
         };
-
-        function createChart(){
+        function createChart() {
             var ctx = document.getElementById("myChart").getContext("2d");
             myPieChart = new Chart(ctx, {
                 type: 'pie',
                 data: dataSource
-            });      
+            });
         }
-        
         function getBudget() {
-            axios.get('/budget')
-            .then(function (res) {
-                console.log(res); 
-                for (var i = 0; i < res.data.myBudget.length; i++) {
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
-                }
-                createChart();
-                change(dataSource.labels.map(function(label, index) {
-                    return { label: label, value: dataSource.datasets[0].data[index] };
-                }));
-            });
-        }
-
+            axios.get('http://localhost:3000/budget')
+                .then(function (res) {
+                    console.log(res);
+                    dataSource.labels = res.data.map(item => item.title);
+                    dataSource.datasets[0].data = res.data.map(item => item.budget);
+                    dataSource.datasets[0].backgroundColor = res.data.map(item => item.bgColor);
+                    createChart();
+                });
+        }
         getBudget();
-        var svg = d3.select("#this")
-	.append("svg")
-	.append("g")
-
-svg.append("g")
-	.attr("class", "slices");
-svg.append("g")
-	.attr("class", "labels");
-svg.append("g")
-	.attr("class", "lines");
-
-var width = 960,
-    height = 450,
-	radius = Math.min(width, height) / 2;
-
-var pie = d3.layout.pie()
-	.sort(null)
-	.value(function(d) {
-		return d.value;
-	});
-
-var arc = d3.svg.arc()
-	.outerRadius(radius * 0.8)
-	.innerRadius(radius * 0.4);
-
-var outerArc = d3.svg.arc()
-	.innerRadius(radius * 0.9)
-	.outerRadius(radius * 0.9);
-
-svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-
-var key = function(d){ return d.data.label; };
-
-var color = d3.scale.ordinal()
-    .domain(dataSource.labels)
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 
 
-function randomData (){
-	var labels = color.domain();
-	return labels.map(function(label){
-		return { label: label, value: Math.random() }
-	});
-}
 
-change(randomData());
+    </script>
+    <script>
 
-d3.select(".randomize")
-	.on("click", function(){
-		change(randomData());
-	});
+        var datum = [];
 
 
-function change(data) {
+        function getBudgetAgain() {
+            axios.get('http://localhost:3000/budget')
+                .then(function (res) {
+                    datum = res.data;
+                    console.log(datum);
+                })
+                .then(function () {
+                    createD3Chart();
+                });
+        }
 
-	/* ------- PIE SLICES -------*/
-    /* ------- this is pie slice and transition effect for the chat like animition-------*/
-    /* ------- duration for the time is mentioned -------*/
-	var slice = svg.select(".slices").selectAll("path.slice")
-		.data(pie(data), key);
 
-	slice.enter()
-		.insert("path")
-		.style("fill", function(d) { return color(d.data.label); })
-		.attr("class", "slice");
+        window.addEventListener("DOMContentLoaded", function () {
+            getBudgetAgain();
+        });
 
-	slice		
-		.transition().duration(1000)
-		.attrTween("d", function(d) {
-			this._current = this._current || d;
-			var interpolate = d3.interpolate(this._current, d);
-			this._current = interpolate(0);
-			return function(t) {
-				return arc(interpolate(t));
-			};
-		})
+        function createD3Chart() {
+            var svg = d3.select("#this")
+                .append("svg")
+                .append("g");
 
-	slice.exit()
-		.remove();
+            svg.append("g")
+                .attr("class", "slices");
+            svg.append("g")
+                .attr("class", "labels");
+            svg.append("g")
+                .attr("class", "lines");
 
-	/* ------- TEXT LABELS -------*/
-    /* ------- these are lables and data calculation -------*/
 
-	var text = svg.select(".labels").selectAll("text")
-		.data(pie(data), key);
 
-	text.enter()
-		.append("text")
-		.attr("dy", ".35em")
-		.text(function(d) {
-			return d.data.label;
-		});
-	
-	function midAngle(d){
-		return d.startAngle + (d.endAngle - d.startAngle)/2;
-	}
+            var chartContainer = document.getElementById("this");
+            var containerWidth = chartContainer.clientWidth;
+            var containerHeight = chartContainer.clientHeight;
 
-	text.transition().duration(1000)
-		.attrTween("transform", function(d) {
-			this._current = this._current || d;
-			var interpolate = d3.interpolate(this._current, d);
-			this._current = interpolate(0);
-			return function(t) {
-				var d2 = interpolate(t);
-				var pos = outerArc.centroid(d2);
-				pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
-				return "translate("+ pos +")";
-			};
-		})
-		.styleTween("text-anchor", function(d){
-			this._current = this._current || d;
-			var interpolate = d3.interpolate(this._current, d);
-			this._current = interpolate(0);
-			return function(t) {
-				var d2 = interpolate(t);
-				return midAngle(d2) < Math.PI ? "start":"end";
-			};
-		});
+            var width = containerWidth,
+                height = containerHeight,
+                radius = (Math.min(width, height) / 2) - 65;
 
-	text.exit()
-		.remove();
+            console.log("data" + datum);
 
-	/* ------- SLICE TO TEXT POLYLINES -------*/
-    /* ------- duration for the time is mentioned -------*/
+            var pie = d3.layout.pie()
+                .sort(null)
+                .value(function (d) {
+                    return d.budget;
+                });
 
-	var polyline = svg.select(".lines").selectAll("polyline")
-		.data(pie(data), key);
-	
-	polyline.enter()
-		.append("polyline");
+            var arc = d3.svg.arc()
+                .outerRadius(radius * 0.8)
+                .innerRadius(radius * 0.4);
 
-	polyline.transition().duration(1000)
-		.attrTween("points", function(d){
-			this._current = this._current || d;
-			var interpolate = d3.interpolate(this._current, d);
-			this._current = interpolate(0);
-			return function(t) {
-				var d2 = interpolate(t);
-				var pos = outerArc.centroid(d2);
-				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-				return [arc.centroid(d2), outerArc.centroid(d2), pos];
-			};			
-		});
-	
-	polyline.exit()
-		.remove();
-};
+            var outerArc = d3.svg.arc()
+                .innerRadius(radius * 0.9)
+                .outerRadius(radius * 0.9);
+
+            svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+            var key = function (d) { return d.data.title; };
+
+
+
+            var color = d3.scale.ordinal()
+                .domain(datum.map(function (d) { return d.title; }))
+                .range(datum.map(function (d) { return d.bgColor; }));
+
+            change(datum);
+
+            function change(data) {
+                console.log("Data " + data);
+                var slice = svg.select(".slices").selectAll("path.slice")
+                    .data(pie(data), key);
+
+                slice.enter()
+                    .insert("path")
+                    .style("fill", function (d) { return color(d.data.title); })
+                    .attr("class", "slice");
+
+                slice
+                    .transition().duration(1000)
+                    .attrTween("d", function (d) {
+                        this._current = this._current || d;
+                        var interpolate = d3.interpolate(this._current, d);
+                        this._current = interpolate(0);
+                        return function (t) {
+                            return arc(interpolate(t));
+                        };
+                    });
+
+                slice.exit()
+                    .remove();
+
+
+                var text = svg.select(".labels").selectAll("text")
+                    .data(pie(data), key);
+
+                text.enter()
+                    .append("text")
+                    .attr("dy", ".35em")
+                    .text(function (d) {
+                        return d.data.title;
+                    });
+
+                function midAngle(d) {
+                    return d.startAngle + (d.endAngle - d.startAngle) / 2;
+                }
+
+                text.transition().duration(1000)
+                    .attrTween("transform", function (d) {
+                        this._current = this._current || d;
+                        var interpolate = d3.interpolate(this._current, d);
+                        this._current = interpolate(0);
+                        return function (t) {
+                            var d2 = interpolate(t);
+                            var pos = outerArc.centroid(d2);
+                            pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+                            return "translate(" + pos + ")";
+                        };
+                    })
+                    .styleTween("text-anchor", function (d) {
+                        this._current = this._current || d;
+                        var interpolate = d3.interpolate(this._current, d);
+                        this._current = interpolate(0);
+                        return function (t) {
+                            var d2 = interpolate(t);
+                            return midAngle(d2) < Math.PI ? "start" : "end";
+                        };
+                    });
+
+                text.exit()
+                    .remove();
+
+
+                var polyline = svg.select(".lines").selectAll("polyline")
+                    .data(pie(data), key);
+
+                polyline.enter()
+                    .append("polyline");
+
+                polyline.transition().duration(1000)
+                    .attrTween("points", function (d) {
+                        this._current = this._current || d;
+                        var interpolate = d3.interpolate(this._current, d);
+                        this._current = interpolate(0);
+                        return function (t) {
+                            var d2 = interpolate(t);
+                            var pos = outerArc.centroid(d2);
+                            pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+                            return [arc.centroid(d2), outerArc.centroid(d2), pos];
+                        };
+                    });
+
+                polyline.exit()
+                    .remove();
+            }
+        }
+
 
     </script>
 </body>
+
 </html>
